@@ -1,3 +1,4 @@
 extends Node
 
-#Global Script
+#Hello
+
