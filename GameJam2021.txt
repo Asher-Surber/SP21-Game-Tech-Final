@@ -1,0 +1,36 @@
+﻿Roles:
+Art/Animation: Head-Gwen
+Programming: Head-Asher
+Story/Scripting: Head-Gavin
+Level Design: Head-Caleb
+World Environment: Head-Gavin
+Sound and Music: Head-Asher
+Mechanics and Goals: Head-Caleb?
+Testing and Debugging: Gavin, Gwen, Caleb
+Special Effects/Juice: Co-Heads-Gavin and Gwen
+UI Design: Head-Gwen?
+
+
+
+
+HUB World:
+        Doors leading to each level
+Can complete in any order
+The final Level/Boss door will open after one completes all three. 
+Gameplay Mechanics:
+        Double Jump
+        Hover Glide
+        Melee Attacks
+        Magic Attacks
+                Small Blast (Rapid)
+                Large Blast (Charge)
+                Spread Blast
+Controls:
+WASD = (Movement)
+SPACE = (Jump)
+SPACE x 2 = (Double Jump)
+SPACE x 2 {Hold on the 2nd} = (Hover Glide)
+SHIFT + W = (Sprint)
+LEFT and RIGHT CLICK = (Mana/Melee Attacks)
+C = (Crouch)
+Scroll Wheel or Num Keys or Left Click on HotBar = (Change Spells)
