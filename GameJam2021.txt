@@ -34,3 +34,29 @@ SHIFT + W = (Sprint)
 LEFT and RIGHT CLICK = (Mana/Melee Attacks)
 C = (Crouch)
 Scroll Wheel or Num Keys or Left Click on HotBar = (Change Spells)
+
+Start: 
+* Main character wakes up
+* Gets a special delivery from a mythical creature (it's a staff, surprise)
+   * Wrong delivery?
+   * You keep running into the delivery creature and he gives you hints?
+* Villain is the dude who ordered staff?
+* Mundane tasks with a fantasy aspect?
+                
+
+
+
+
+Levels and goals:
+* Completing mundane tasks add to staffs abilities
+   * Side tasks build mana
+* First piece?:
+   * “Attack” tree sapling to make it grow
+   * Adult tree gives you something to add to staff
+
+
+
+
+Final boss/goal?:
+* Beat up guy who got your shirt
+   * wizard?
