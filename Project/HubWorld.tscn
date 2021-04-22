@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Player/Camera.gd" type="Script" id=1]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Staff/Staff.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Global.gd" type="Script" id=4]
+
+[sub_resource type="PhysicsMaterial" id=1]
+rough = true
+
+[sub_resource type="ConcavePolygonShape" id=2]
+data = PoolVector3Array( 1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1 )
+
+[sub_resource type="PlaneMesh" id=3]
+
+[node name="Hub World" type="Spatial"]
+script = ExtResource( 4 )
+
+[node name="Ground" type="Spatial" parent="."]
+
+[node name="StaticBody" type="StaticBody" parent="Ground"]
+physics_material_override = SubResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Ground/StaticBody"]
+shape = SubResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Ground/StaticBody"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="Player Container" type="Spatial" parent="."]
+
+[node name="Player" parent="Player Container" instance=ExtResource( 2 )]
+
+[node name="Staff" parent="Player Container/Player" instance=ExtResource( 3 )]
+
+[node name="Pivot" type="Spatial" parent="."]
+
+[node name="Camera" type="Camera" parent="Pivot"]
+script = ExtResource( 1 )
