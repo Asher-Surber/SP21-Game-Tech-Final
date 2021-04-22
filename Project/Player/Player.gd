@@ -1,6 +1,6 @@
 extends KinematicBody
 
-export var Staff = "Staff/Staff.gd"
+var Staff = load("Staff/Staff.tscn")
 onready var Camera = $Pivot/Camera
 var mouse_sensitivity = 0.002
 var mouse_range = 1.2

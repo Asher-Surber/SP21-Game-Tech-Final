@@ -9,18 +9,12 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Reference",
-"class": "Staff",
-"language": "GDScript",
-"path": "res://Staff/Staff.gd"
-}, {
 "base": "Staff",
 "class": "smallBlast",
 "language": "GDScript",
 "path": "res://Staff/smallBlast.gd"
 } ]
 _global_script_class_icons={
-"Staff": "",
 "smallBlast": ""
 }
 
