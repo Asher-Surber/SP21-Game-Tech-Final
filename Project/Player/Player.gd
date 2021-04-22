@@ -1,6 +1,6 @@
 extends KinematicBody
 
-var Staff = load("Staff/Staff.tscn")
+# onready var Staff
 onready var Camera = $Pivot/Camera
 var mouse_sensitivity = 0.002
 var mouse_range = 1.2
@@ -31,8 +31,7 @@ func get_input():
 		input_dir += 1
 	if Input.is_action_just_pressed("jump"):
 		input_dir.y -= 1
-	if Input.is_action_just_pressed("fire"):
-		Staff.smallBlast()
+	
 	  
 	
 func _unhandled_input(event):
