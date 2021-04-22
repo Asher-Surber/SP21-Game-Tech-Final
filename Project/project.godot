@@ -8,9 +8,6 @@
 
 config_version=4
 
-<<<<<<< Updated upstream
-_global_script_classes=[  ]
-=======
 _global_script_classes=[ {
 "base": "Reference",
 "class": "Staff",
@@ -22,9 +19,9 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Staff/smallBlast.gd"
 } ]
->>>>>>> Stashed changes
 _global_script_class_icons={
-
+"Staff": "",
+"smallBlast": ""
 }
 
 [application]
@@ -33,8 +30,6 @@ config/name="Game Jam 2021"
 run/main_scene="HubWorld.tscn"
 config/icon="res://icon.png"
 
-<<<<<<< Updated upstream
-=======
 [autoload]
 
 Global="*res://Global.gd"
@@ -107,7 +102,6 @@ inventory={
  ]
 }
 
->>>>>>> Stashed changes
 [rendering]
 
 environment/default_environment="res://default_env.tres"
