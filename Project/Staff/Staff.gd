@@ -1,8 +1,8 @@
-class_name  Staff
+#confused about class naming...
 
 #load small blast scene
 	
-func _init(gem_count, gem_equipped, mana, is_equipped):
+func _init(gem_count, gem_equipped, mana):
 	gem_count = self.gem_count
 	gem_equipped = self.gem_equipped
 	mana = self.mana
