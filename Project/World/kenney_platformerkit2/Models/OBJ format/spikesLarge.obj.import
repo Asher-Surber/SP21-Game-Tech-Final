@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/spikesLarge.obj-99af37f65da9c1707e4a7fd767c42d85.mesh"
+
+[deps]
+
+files=[ "res://.import/spikesLarge.obj-99af37f65da9c1707e4a7fd767c42d85.mesh" ]
+
+source_file="res://World/kenney_platformerkit2/Models/OBJ format/spikesLarge.obj"
+dest_files=[ "res://.import/spikesLarge.obj-99af37f65da9c1707e4a7fd767c42d85.mesh", "res://.import/spikesLarge.obj-99af37f65da9c1707e4a7fd767c42d85.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

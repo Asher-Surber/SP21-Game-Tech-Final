@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/driveway_short.obj-af65419203c31ea7ff63cfcf47a7d3cb.mesh"
+
+[deps]
+
+files=[ "res://.import/driveway_short.obj-af65419203c31ea7ff63cfcf47a7d3cb.mesh" ]
+
+source_file="res://World/city-kit-urban-1/Models/OBJ format/driveway_short.obj"
+dest_files=[ "res://.import/driveway_short.obj-af65419203c31ea7ff63cfcf47a7d3cb.mesh", "res://.import/driveway_short.obj-af65419203c31ea7ff63cfcf47a7d3cb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
