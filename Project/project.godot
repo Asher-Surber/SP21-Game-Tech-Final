@@ -8,14 +8,8 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "Staff",
-"class": "smallBlast",
-"language": "GDScript",
-"path": "res://Staff/smallBlast.gd"
-} ]
+_global_script_classes=[  ]
 _global_script_class_icons={
-"smallBlast": ""
 }
 
 [application]
@@ -97,6 +91,11 @@ inventory={
 "melee attack 1"={
 "deadzone": 0.5,
 "events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+quit={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":81,"unicode":0,"echo":false,"script":null)
  ]
 }
 
