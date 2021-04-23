@@ -1,4 +1,5 @@
 #confused about class naming...
+
 extends Spatial
 #export(Script) var Staff
 
@@ -26,4 +27,3 @@ func smallBlast():
 			mana -= 5
 		else:
 			return "But nothing happened!"	#need to create popup message for empty mana
-		
