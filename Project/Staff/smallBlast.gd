@@ -1,3 +1,3 @@
-extends Staff
+extends "Staff.gd"
 
 
