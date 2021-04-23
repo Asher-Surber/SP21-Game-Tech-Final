@@ -20,7 +20,8 @@ func _process(_delta):
 	get_input()
 
 func _physics_process(delta):
-	velocity.y += gravity * delta
+	if velocity.y !=0:
+		velocity.y -= gravity * delta
 	var desired_velocity = get_input() * max_speed
 	
 	velocity.x = desired_velocity.x
