@@ -1,24 +1,24 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Player/Player.gd" type="Script" id=2]
+[ext_resource path="res://World/Terrain/blockRoundedLarge.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://World/Buildings/Building Scenes/house1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://World/Buildings/Building Scenes/BIGhouse.tscn" type="PackedScene" id=4]
+[ext_resource path="res://World/Enviroment/Sidewalk/Sidewalk.tscn" type="PackedScene" id=5]
+[ext_resource path="res://World/Enviroment/Fence/Fence.tscn" type="PackedScene" id=6]
+[ext_resource path="res://World/Enviroment/Sidewalk/TownSquare.tscn" type="PackedScene" id=7]
 
 [sub_resource type="PhysicsMaterial" id=1]
 absorbent = true
 
 [sub_resource type="ConvexPolygonShape" id=2]
 
-[sub_resource type="PlaneMesh" id=3]
-
 [node name="Level1" type="Spatial"]
 
 [node name="Player Container" type="Spatial" parent="."]
 
-[node name="Player" type="KinematicBody" parent="Player Container" instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )
-collision_layer = 2
+[node name="Player" parent="Player Container" instance=ExtResource( 1 )]
 collision_mask = 45
-script = ExtResource( 2 )
 
 [node name="Ground" type="Spatial" parent="."]
 
@@ -32,5 +32,57 @@ transform = Transform( 5, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0 )
 shape = SubResource( 2 )
 
 [node name="MeshInstance" type="MeshInstance" parent="Ground/StaticBody"]
-mesh = SubResource( 3 )
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, 0 )
+mesh = ExtResource( 2 )
 material/0 = null
+material/1 = null
+
+[node name="Buildings" type="Spatial" parent="."]
+
+[node name="house1" parent="Buildings" instance=ExtResource( 3 )]
+
+[node name="BIGhouse" parent="Buildings" instance=ExtResource( 4 )]
+
+[node name="BIGhouse2" parent="Buildings" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -31.2037, 0, 0 )
+
+[node name="BIGhouse3" parent="Buildings" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.1767, 0, 0 )
+
+[node name="BIGhouse4" parent="Buildings" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -48.3943, 0, 0 )
+
+[node name="BIGhouse5" parent="Buildings" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33.8798, 0, 0 )
+
+[node name="BIGhouse6" parent="Buildings" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -65.5397, 0, 0 )
+
+[node name="Enviroment" type="Spatial" parent="."]
+
+[node name="Fence" parent="Enviroment" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.89855 )
+
+[node name="Sidewalk" parent="Enviroment" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.89137, 0, 0 )
+
+[node name="Sidewalk2" parent="Enviroment" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.89137, 0, -50.0857 )
+
+[node name="TownSquare" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16.2499 )
+
+[node name="TownSquare2" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -18.3247 )
+
+[node name="TownSquare3" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.4412 )
+
+[node name="TownSquare4" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0056, 0, -16.4371 )
+
+[node name="TownSquare5" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0113, 0, -18.543 )
+
+[node name="TownSquare6" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9216, 0, -20.5355 )
