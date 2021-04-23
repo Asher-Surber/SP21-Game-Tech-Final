@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/doorClosed.obj-1cfa86dc5b4864b29f814aeb2460c805.mesh"
+
+[deps]
+
+files=[ "res://.import/doorClosed.obj-1cfa86dc5b4864b29f814aeb2460c805.mesh" ]
+
+source_file="res://World/Enviroment/doorClosed.obj"
+dest_files=[ "res://.import/doorClosed.obj-1cfa86dc5b4864b29f814aeb2460c805.mesh", "res://.import/doorClosed.obj-1cfa86dc5b4864b29f814aeb2460c805.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
