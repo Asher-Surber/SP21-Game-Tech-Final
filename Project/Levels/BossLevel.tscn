@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player/Player.gd" type="Script" id=2]
+
+[sub_resource type="PhysicsMaterial" id=1]
+absorbent = true
+
+[sub_resource type="ConvexPolygonShape" id=2]
+
+[sub_resource type="PlaneMesh" id=3]
+
+[node name="BossLevel" type="Spatial"]
+
+[node name="Player Container" type="Spatial" parent="."]
+
+[node name="Player" type="KinematicBody" parent="Player Container" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )
+collision_layer = 2
+collision_mask = 45
+script = ExtResource( 2 )
+
+[node name="Ground" type="Spatial" parent="."]
+
+[node name="StaticBody" type="StaticBody" parent="Ground"]
+transform = Transform( 50, 0, 0, 0, 1, 0, 0, 0, 50, 0, 0, 0 )
+collision_mask = 62
+physics_material_override = SubResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Ground/StaticBody"]
+transform = Transform( 5, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0 )
+shape = SubResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Ground/StaticBody"]
+mesh = SubResource( 3 )
+material/0 = null
