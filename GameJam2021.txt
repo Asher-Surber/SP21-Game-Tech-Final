@@ -1,4 +1,6 @@
-﻿Roles:
+The Crewsaders: 3d Fantasy RPG Platformer
+Name (TBD)
+Roles:
 Art/Animation: Head-Gwen
 Programming: Head-Asher
 Story/Scripting: Head-Gavin
@@ -11,20 +13,18 @@ Special Effects/Juice: Co-Heads-Gavin and Gwen
 UI Design: Head-Gwen?
 
 
-
-
 HUB World:
-        Doors leading to each level
+	Doors leading to each level
 Can complete in any order
 The final Level/Boss door will open after one completes all three. 
 Gameplay Mechanics:
-        Double Jump
-        Hover Glide
-        Melee Attacks
-        Magic Attacks
-                Small Blast (Rapid)
-                Large Blast (Charge)
-                Spread Blast
+	Double Jump
+	Hover Glide
+	Melee Attacks
+	Magic Attacks
+		Small Blast (Rapid)
+		Large Blast (Charge)
+		Spread Blast
 Controls:
 WASD = (Movement)
 SPACE = (Jump)
@@ -34,29 +34,127 @@ SHIFT + W = (Sprint)
 LEFT and RIGHT CLICK = (Mana/Melee Attacks)
 C = (Crouch)
 Scroll Wheel or Num Keys or Left Click on HotBar = (Change Spells)
-
 Start: 
-* Main character wakes up
-* Gets a special delivery from a mythical creature (it's a staff, surprise)
-   * Wrong delivery?
-   * You keep running into the delivery creature and he gives you hints?
-* Villain is the dude who ordered staff?
-* Mundane tasks with a fantasy aspect?
-                
-
-
-
+Main character wakes up
+Gets a special delivery from a mythical creature (it's a staff, surprise)
+Wrong delivery
+Villain is the dude who ordered staff?
 
 Levels and goals:
-* Completing mundane tasks add to staffs abilities
-   * Side tasks build mana
-* First piece?:
-   * “Attack” tree sapling to make it grow
-   * Adult tree gives you something to add to staff
-
-
-
+Completing random tasks add to mana
+Tasks are highlighted
+Attack certain trees
+Interact with certain objects
+Signs
+Mailboxes
+etc...
+Killing enemies
 
 Final boss/goal?:
-* Beat up guy who got your shirt
-   * wizard?
+Beat up guy who got your shirt
+Wizard?
+
+Mechanics:
+
+Controls: 
+WASD = (Movement)
+SPACE = (Jump)
+Mouse = camera movement
+Right click = interact with objects/people
+
+Mana Crystals:
+Gain by completing tasks, talking to NPC’s, or “befriending” enemies
+Gives player 5 mana per crystal
+
+Staff:
+Attacks
+Small projectile (single left click)
+Takes 5 mana
+Large projectile (press and hold left click)
+Takes 10 mana
+Other uses
+Double jump (press space twice)
+Hover (press space twice, hold on second press)
+Mana Usage
+Mana bar at lower right screen (HUD)
+Goes down with every use
+Gets refilled by using Mana potions
+Start with 20 mana
+Gaining crystals improves mana level by 5
+Up to 100 mp
+
+Player:
+Inventory? Do we want/need one, how do we want it to work, do we want hotbar, what can go in hotbar
+Hotbar style
+Maybe just have the staff, mana potions, and health potions as possible objects to carry (limit of 15 for each potion?)
+Mana limit
+100 mp
+Health limit
+100 hp
+
+Enemies:
+Normal Behavior
+Patrolling areas?
+Moving back and forth?
+Just standing in random places
+Neutral until provoked
+Attack them to start a fight
+Interact with them (right click) to talk to them (“befriend” them)
+They may give health/mana potions
+“Coming from tree” Behavior
+Attacking trees may spawn enemies
+These enemies are aggressive and will attack you
+You can not “befriend” these enemies
+How do we encounter them
+In world already
+Or loaded in when talking to npc/interacting with signs
+Attack them to initiate a fight
+Attacks
+Maybe some kind of projectile?
+Difficulty variance 
+Monsters in each area have different levels of health?
+What happens when killed/rewards, option to not kill?
+When you kill them, you get mana crystals (to increase max mana)
+More you kill, better the shirt is at the end
+Can choose not to fight them, and instead “befriend” them
+They may give you a health potion or a mana potion
+Not killing them worsens the shirt at the end of the game
+
+NPCs:
+Behavior
+Stand at random places 
+Only do something when interacted with
+Gives dialogue
+Gives hints?
+Gives mana potions?
+Gives mana crystals?
+
+Signs:
+Behavior 
+Placed at random places
+One sided information
+Reading the sign
+
+Trees:
+Attack/interact with them
+Random trees give mana crystals
+Other trees spawn enemies that you are forced to fight
+
+Mana Potions:
+Get from NPC’s
+Interacting with certain NPC’s gives you them
+Get from enemies that you “befriend”
+Interacting with certain signs gives you them
+Replenish 10 mana per potion?
+Cooldown of 15 seconds?
+
+Health Potions:
+Get from enemies that you “befriend”
+Drinking will heal 15hp?
+Cooldown of 15 seconds?
+
+Doors:
+Interact with to “open”
+They just disappear
+Some don’t “open”
+Or at least not until you do something else?
