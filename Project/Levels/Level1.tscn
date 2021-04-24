@@ -6,21 +6,20 @@
 [ext_resource path="res://World/Buildings/Building Scenes/BIGhouse.tscn" type="PackedScene" id=4]
 [ext_resource path="res://World/Enviroment/Sidewalk/Sidewalk.tscn" type="PackedScene" id=5]
 [ext_resource path="res://World/Enviroment/Fence/Fence.tscn" type="PackedScene" id=6]
-[ext_resource path="res://World/Enviroment/Sidewalk/TownSquare.tscn" type="PackedScene" id=7]
-[ext_resource path="res://World/Enviroment/Trees/Tree_Pine.tscn" type="PackedScene" id=8]
+[ext_resource path="res://World/Enviroment/driveway_long.obj" type="ArrayMesh" id=7]
+
 
 [sub_resource type="ConvexPolygonShape" id=1]
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 2.87024, 1, 0.001 )
 
 [node name="Level1" type="Spatial"]
 
 [node name="Player Container" type="Spatial" parent="."]
 
 [node name="Player" parent="Player Container" instance=ExtResource( 1 )]
-<<<<<<< Updated upstream
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.68987, 2, 50.3548 )
-=======
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.59628, 2, 67.8029 )
->>>>>>> Stashed changes
 collision_mask = 45
 
 [node name="Ground" type="Spatial" parent="."]
@@ -29,40 +28,19 @@ collision_mask = 45
 transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, 0 )
 collision_mask = 62
 
-[node name="MeshInstance" type="MeshInstance" parent="Ground/StaticBody"]
-transform = Transform( 7, 0, 0, 0, 1, 0, 0, 0, 7, 0, 0, 0 )
-mesh = ExtResource( 2 )
-material/0 = null
-material/1 = null
-
 [node name="CollisionShape" type="CollisionShape" parent="Ground/StaticBody"]
 transform = Transform( -46.4736, 0, 0, 0, 1.27376, 0, 0, 0, 12.7376, 0, 0, 0 )
 shape = SubResource( 1 )
 
+[node name="MeshInstance" type="MeshInstance" parent="Ground/StaticBody"]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, 0 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+
 [node name="Buildings" type="Spatial" parent="."]
 
 [node name="house1" parent="Buildings" instance=ExtResource( 3 )]
-<<<<<<< Updated upstream
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.68987, 0, 50.3548 )
-
-[node name="BIGhouse" parent="Buildings" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.68987, 0, 50.3548 )
-
-[node name="BIGhouse2" parent="Buildings" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -24.5138, 0, 50.3548 )
-
-[node name="BIGhouse3" parent="Buildings" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23.8666, 0, 50.3548 )
-
-[node name="BIGhouse4" parent="Buildings" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -41.7044, 0, 50.3548 )
-
-[node name="BIGhouse5" parent="Buildings" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.5697, 0, 50.3548 )
-
-[node name="BIGhouse6" parent="Buildings" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -58.8498, 0, 50.3548 )
-=======
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.59628, 0, 67.8029 )
 
 [node name="BIGhouse" parent="Buildings" instance=ExtResource( 4 )]
@@ -82,20 +60,10 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 37.4761, 0, 67.8029 )
 
 [node name="BIGhouse6" parent="Buildings" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -61.9434, 0, 67.8029 )
->>>>>>> Stashed changes
 
 [node name="Enviroment" type="Spatial" parent="."]
 
 [node name="Fence" parent="Enviroment" instance=ExtResource( 6 )]
-<<<<<<< Updated upstream
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7453, 0, 37.666 )
-
-[node name="Sidewalk" parent="Enviroment" instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2015, 0, 50.3548 )
-
-[node name="Sidewalk2" parent="Enviroment" instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.89137, 0, -21.1273 )
-=======
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.59628, 0, 59.9043 )
 
 [node name="Sidewalk" parent="Enviroment" instance=ExtResource( 5 )]
@@ -103,21 +71,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.29509, 0, 67.8029 )
 
 [node name="Sidewalk2" parent="Enviroment" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.89137, 0, 24.6199 )
->>>>>>> Stashed changes
 
-[node name="Town Square" parent="Enviroment" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 28.9584 )
+[node name="StaticBody" type="StaticBody" parent="Enviroment"]
 
-<<<<<<< Updated upstream
-[node name="Town Square 2" parent="Enviroment" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9868, 0, 28.326 )
-
-[node name="Town Square 3" parent="Enviroment" instance=ExtResource( 7 )]
-transform = Transform( 0.031498, 0, -0.999504, 0, 1, 0, 0.999504, 0, 0.031498, -50.4312, 0, -37.147 )
-
-[node name="Tree_Pine" parent="Enviroment" instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 28.9584 )
-=======
 [node name="MeshInstance" type="MeshInstance" parent="Enviroment/StaticBody"]
 transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 50, 0, 1, 15.3743 )
 mesh = ExtResource( 7 )
@@ -127,4 +83,3 @@ material/1 = null
 [node name="CollisionShape" type="CollisionShape" parent="Enviroment/StaticBody"]
 transform = Transform( -0.862993, 0, 0, 0, 0.200745, 0, 0, 0, 9082.37, 0, 1.12546, 14.3209 )
 shape = SubResource( 2 )
->>>>>>> Stashed changes
