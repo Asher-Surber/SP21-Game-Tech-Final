@@ -4,7 +4,6 @@ extends KinematicBody
 onready var Camera = $Pivot/Camera
 
 var max_speed = 8
-var jump_speed = 5
 var mouse_sensitivity = 0.005
 var mouse_range = 2
 var velocity = Vector3()
@@ -17,14 +16,13 @@ var inventory = []
 func _ready():
 	pass
 
-#func _process(_delta):
-#	get_input()
+func _process(_delta):
+	get_input()
 
 func _physics_process(delta):
-	
-	velocity.y -= gravity * delta
+	if velocity.y !=0:
+		velocity.y -= gravity * delta
 	var desired_velocity = get_input() * max_speed
-
 	
 	velocity.x = desired_velocity.x
 	velocity.z = desired_velocity.z
@@ -45,9 +43,8 @@ func get_input():
 	if Input.is_action_pressed("right"):
 		#input_dir += 1
 		input_dir += Camera.global_transform.basis.x
-	if Input.is_action_pressed("jump") and is_on_floor():
-		if "jump" and is_on_floor():
-			velocity.y = jump_speed
+	if Input.is_action_just_pressed("jump"):
+		input_dir.y -= 1
 	input_dir = input_dir.normalized()
 	return input_dir
 	  
@@ -57,7 +54,3 @@ func _unhandled_input(event):
 		$Pivot.rotate_x(-event.relative.y * mouse_sensitivity)
 		rotate_y(-event.relative.x * mouse_sensitivity)
 		$Pivot.rotation.x = clamp($Pivot.rotation.x, -mouse_range, mouse_range)
-	if Input.is_action_pressed("crouch"):
-		while velocity.y > -2:
-			--velocity.y
-		
