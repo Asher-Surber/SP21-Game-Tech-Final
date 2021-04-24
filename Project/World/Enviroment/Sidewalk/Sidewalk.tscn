@@ -6,8 +6,10 @@
 extents = Vector3( 50, 1, 2 )
 
 [node name="Sidewalk" type="StaticBody"]
+
 collision_layer = 2147483656
 collision_mask = 2
+
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( -1.62921e-06, 0, -300, 0, 1, 0, 10, 0, -4.88762e-05, 1, 1, -0.480548 )
@@ -16,5 +18,7 @@ material/0 = null
 material/1 = null
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
+
 transform = Transform( 1.38177, 0, 0, 0, 0.342344, 0, 0, 0, 25.444, 0, 0.643164, 0 )
+
 shape = SubResource( 1 )
