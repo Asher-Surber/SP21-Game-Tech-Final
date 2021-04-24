@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/fenceCorner.obj-6eeea05a72e9ad4cd4e95eb625392779.mesh"
+
+[deps]
+
+files=[ "res://.import/fenceCorner.obj-6eeea05a72e9ad4cd4e95eb625392779.mesh" ]
+
+source_file="res://World/kenney_platformerkit2/Models/OBJ format/fenceCorner.obj"
+dest_files=[ "res://.import/fenceCorner.obj-6eeea05a72e9ad4cd4e95eb625392779.mesh", "res://.import/fenceCorner.obj-6eeea05a72e9ad4cd4e95eb625392779.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

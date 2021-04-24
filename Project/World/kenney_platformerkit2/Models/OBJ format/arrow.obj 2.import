@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/arrow.obj-4e911a0eb238cd425c5694f3496187b1.mesh"
+
+[deps]
+
+files=[ "res://.import/arrow.obj-4e911a0eb238cd425c5694f3496187b1.mesh" ]
+
+source_file="res://World/kenney_platformerkit2/Models/OBJ format/arrow.obj"
+dest_files=[ "res://.import/arrow.obj-4e911a0eb238cd425c5694f3496187b1.mesh", "res://.import/arrow.obj-4e911a0eb238cd425c5694f3496187b1.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

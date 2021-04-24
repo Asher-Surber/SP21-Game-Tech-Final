@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/lever.obj-2f3d8e82fe6b0ffb0799479ea8a2918f.mesh"
+
+[deps]
+
+files=[ "res://.import/lever.obj-2f3d8e82fe6b0ffb0799479ea8a2918f.mesh" ]
+
+source_file="res://World/kenney_platformerkit2/Models/OBJ format/lever.obj"
+dest_files=[ "res://.import/lever.obj-2f3d8e82fe6b0ffb0799479ea8a2918f.mesh", "res://.import/lever.obj-2f3d8e82fe6b0ffb0799479ea8a2918f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
