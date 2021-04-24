@@ -2,7 +2,7 @@
 MSCH-C220 Game Jam, April 2021
 
 ## Theme: Every Death Counts
-We interpreted the theme as every enemy death adds to our overall score. However, we are passifists and did not believe that our enemies deserve to die as their lives are important to us. Therefore, we made peace with them so that we can all live together in harmony.
+We interpreted the theme as every enemy death adds to our overall score. However, we are pacifists and did not believe that our enemies deserve to die as their lives are important to us. Therefore, we made peace with them so that we can all live together in harmony.
 
 ## Game Play
 Objective: Explore and try an find all the slimes :)
@@ -22,7 +22,7 @@ None
 ## Future Development
 Hopefully none.
 
-# Created by: Group Name
+# Created by: The Crewsaders
 Asher Surber: Programming and music
 Gwen Hall: Made the Enemy, Arm, and Staff Models
 Gavin Price: Built the Houses, Level Design
