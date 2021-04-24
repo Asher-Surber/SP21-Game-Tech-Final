@@ -6,7 +6,8 @@ extends Spatial
 #class_name Staff
 #class Staff extends Spatial:
 	
-#load small blast scene
+var SmallBlast = load("SmallBlast.tscn")
+var LargeBlast = load("LargeBlast.tscn")
 
 export(int) var crystal_count
 export(int) var mana
@@ -18,12 +19,11 @@ export(int) var mana
 #		gem_count = self.gem_count
 #		gem_equipped = self.gem_equipped
 #		mana = self.mana
+func _process(_delta):
+	get_input()
 
-
-func smallBlast():
+func get_input():
 	if Input.is_action_just_pressed("fire"):
-		if mana >= 5:
-			#var smallBlast = smallBlast.instance()
-			mana -= 5
-		else:
-			return "But nothing happened!"	#need to create popup message for empty mana
+		SmallBlast.smallBlast()
+	if Input.is_action_pressed("fire"):
+		LargeBlast.largeBlast()

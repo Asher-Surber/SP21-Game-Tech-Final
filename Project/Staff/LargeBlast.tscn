@@ -1,6 +1,11 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Staff/LargeBlast.gd" type="Script" id=1]
+[ext_resource path="res://Staff/Charge.gd" type="Script" id=2]
 
 [node name="LargeBlast" type="Area"]
 script = ExtResource( 1 )
+
+[node name="Charge" type="Timer" parent="."]
+script = ExtResource( 2 )
+[connection signal="tree_entered" from="Charge" to="Charge" method="_on_Charge_tree_entered"]

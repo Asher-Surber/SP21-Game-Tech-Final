@@ -1,3 +1,4 @@
+
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Staff/Staff.gd" type="Script" id=1]
@@ -16,7 +17,9 @@ height = 1.87002
 [node name="Staff" type="Spatial"]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.5, 1, 0 )
 
-[node name="RigidBody" type="RigidBody" parent="."]
+[node name="staff_complete" parent="." instance=ExtResource( 2 )]
+
+[node name="RigidBody" type="RigidBody" parent="staff_complete"]
 script = ExtResource( 1 )
 
 [node name="CollisionPolygon" type="CollisionShape" parent="RigidBody"]
@@ -34,3 +37,4 @@ shape = SubResource( 3 )
 [node name="MeshInstance" type="MeshInstance" parent="."]
 
 [node name="staff_flats" parent="." instance=ExtResource( 2 )]
+
