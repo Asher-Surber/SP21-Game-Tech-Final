@@ -1,8 +1,6 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://World/Buildings/house_type03.obj" type="ArrayMesh" id=1]
-
-[sub_resource type="BoxShape" id=1]
 
 [node name="BIGhouse" type="StaticBody"]
 
@@ -16,5 +14,3 @@ material/3 = null
 material/4 = null
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 11.0725, 0, 0, 0, 6.66829, 0, 0, 0, 4.31332, 11.6583, 7.84018, 4.39105 )
-shape = SubResource( 1 )
