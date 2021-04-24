@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/Terrain/blockRoundedLarge.obj" type="ArrayMesh" id=2]
@@ -6,9 +6,12 @@
 [ext_resource path="res://World/Buildings/Building Scenes/BIGhouse.tscn" type="PackedScene" id=4]
 [ext_resource path="res://World/Enviroment/Sidewalk/Sidewalk.tscn" type="PackedScene" id=5]
 [ext_resource path="res://World/Enviroment/Fence/Fence.tscn" type="PackedScene" id=6]
-[ext_resource path="res://World/Enviroment/Sidewalk/TownSquare.tscn" type="PackedScene" id=7]
+[ext_resource path="res://World/Enviroment/driveway_long.obj" type="ArrayMesh" id=7]
 
 [sub_resource type="ConvexPolygonShape" id=1]
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 2.87024, 1, 0.001 )
 
 [node name="Level1" type="Spatial"]
 
@@ -24,7 +27,7 @@ transform = Transform( 50, 0, 0, 0, 1, 0, 0, 0, 50, 0, 0, 0 )
 collision_mask = 62
 
 [node name="CollisionShape" type="CollisionShape" parent="Ground/StaticBody"]
-transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, 0 )
+transform = Transform( -46.4736, 0, 0, 0, 1.27376, 0, 0, 0, 12.7376, 0, 0, 0 )
 shape = SubResource( 1 )
 
 [node name="MeshInstance" type="MeshInstance" parent="Ground/StaticBody"]
@@ -65,20 +68,14 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.89137, 0, 0 )
 [node name="Sidewalk2" parent="Enviroment" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.89137, 0, -50.0857 )
 
-[node name="TownSquare" parent="Enviroment" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16.2499 )
+[node name="StaticBody" type="StaticBody" parent="Enviroment"]
 
-[node name="TownSquare2" parent="Enviroment" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -18.3247 )
+[node name="MeshInstance" type="MeshInstance" parent="Enviroment/StaticBody"]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 50, 0, 1, -59.3313 )
+mesh = ExtResource( 7 )
+material/0 = null
+material/1 = null
 
-[node name="TownSquare3" parent="Enviroment" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.4412 )
-
-[node name="TownSquare4" parent="Enviroment" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0056, 0, -16.4371 )
-
-[node name="TownSquare5" parent="Enviroment" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0113, 0, -18.543 )
-
-[node name="TownSquare6" parent="Enviroment" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9216, 0, -20.5355 )
+[node name="CollisionShape" type="CollisionShape" parent="Enviroment/StaticBody"]
+transform = Transform( -0.862993, 0, 0, 0, 0.200745, 0, 0, 0, 9082.37, 0, 1.12546, -60.3847 )
+shape = SubResource( 2 )
