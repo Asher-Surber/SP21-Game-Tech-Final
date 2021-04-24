@@ -57,7 +57,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -65.5397, 0, 0 )
 [node name="Enviroment" type="Spatial" parent="."]
 
 [node name="Fence" parent="Enviroment" instance=ExtResource( 6 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.89855 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55.4049, 0, -36.2136 )
 
 [node name="Sidewalk" parent="Enviroment" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.89137, 0, 0 )
