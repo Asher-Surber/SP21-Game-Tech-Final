@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/flowers.obj-ca01312a85ff83919191f809df6c409a.mesh"
+
+[deps]
+
+files=[ "res://.import/flowers.obj-ca01312a85ff83919191f809df6c409a.mesh" ]
+
+source_file="res://World/kenney_platformerkit2/Models/OBJ format/flowers.obj"
+dest_files=[ "res://.import/flowers.obj-ca01312a85ff83919191f809df6c409a.mesh", "res://.import/flowers.obj-ca01312a85ff83919191f809df6c409a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
