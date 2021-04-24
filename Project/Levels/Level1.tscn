@@ -66,19 +66,31 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.89137, 0, 0 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.89137, 0, -50.0857 )
 
 [node name="TownSquare" parent="Enviroment" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16.2499 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16.25 )
 
 [node name="TownSquare2" parent="Enviroment" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -18.3247 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -18.325 )
 
 [node name="TownSquare3" parent="Enviroment" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.4412 )
 
 [node name="TownSquare4" parent="Enviroment" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0056, 0, -16.4371 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9719, 3.8147e-06, -16.3695 )
 
 [node name="TownSquare5" parent="Enviroment" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0113, 0, -18.543 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9806, 0.0217381, -18.3161 )
 
 [node name="TownSquare6" parent="Enviroment" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9216, 0, -20.5355 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9873, -0.0163906, -19.5424 )
+
+[node name="TownSquare7" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 0.999996, 0, 0.00270526, 0, 1, 0, -0.00270526, 0, 0.999996, 0.817725, 0.950541, -23.3543 )
+
+[node name="TownSquare8" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9873, -0.0163906, -22.4754 )
+
+[node name="TownSquare9" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9873, -0.0163906, -24.3768 )
+
+[node name="TownSquare10" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9873, -0.0163906, -30.5546 )
