@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://World/Enviroment/fence_large.obj" type="ArrayMesh" id=1]
+
+[node name="Fence" type="StaticBody"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( -9.99995, 0, 0.0322881, 0, 5, 0, -0.0322881, 0, -9.99995, -5.51995, 1.55066, -6.87499 )
+mesh = ExtResource( 1 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
