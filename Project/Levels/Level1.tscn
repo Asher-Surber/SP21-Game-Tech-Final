@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/Terrain/blockRoundedLarge.obj" type="ArrayMesh" id=2]
@@ -6,11 +6,9 @@
 [ext_resource path="res://World/Buildings/Building Scenes/BIGhouse.tscn" type="PackedScene" id=4]
 [ext_resource path="res://World/Enviroment/Sidewalk/Sidewalk.tscn" type="PackedScene" id=5]
 [ext_resource path="res://World/Enviroment/Fence/Fence.tscn" type="PackedScene" id=6]
-[ext_resource path="res://World/Enviroment/treePine.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://World/Enviroment/Trees/PineTree.tscn" type="PackedScene" id=7]
 
 [sub_resource type="ConvexPolygonShape" id=1]
-
-[sub_resource type="BoxShape" id=2]
 
 [node name="Level1" type="Spatial"]
 
@@ -69,14 +67,32 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.89137, 0, -50.0857 )
 
 [node name="Trees" type="Spatial" parent="."]
 
-[node name="PineTree" type="StaticBody" parent="Trees"]
+[node name="PineTree" parent="Trees" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25.8918, 0, -28.8003 )
 
-[node name="MeshInstance" type="MeshInstance" parent="Trees/PineTree"]
-transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 51.8959, 1, -10.0268 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
+[node name="PineTree2" parent="Trees" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0563, 0, 14.9934 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Trees/PineTree"]
-transform = Transform( 3, 0, 0, 0, 10, 0, 0, 0, 3, 52, 12.3811, -10 )
-shape = SubResource( 2 )
+[node name="PineTree3" parent="Trees" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.2114, 0, -16.3462 )
+
+[node name="PineTree4" parent="Trees" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.5573, 0, 30.0328 )
+
+[node name="PineTree5" parent="Trees" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.86745, 0, 70.5023 )
+
+[node name="PineTree6" parent="Trees" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.7506, 0, 0 )
+
+[node name="PineTree7" parent="Trees" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -48.35, 0, -13.8788 )
+
+[node name="PineTree8" parent="Trees" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -71.0024, 0, 0 )
+
+[node name="PineTree9" parent="Trees" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -53.9041, 0, 26.3205 )
+
+[node name="PineTree10" parent="Trees" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -50.5282 )
