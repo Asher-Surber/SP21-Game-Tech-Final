@@ -1,11 +1,13 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/Terrain/blockRoundedLarge.obj" type="ArrayMesh" id=2]
 [ext_resource path="res://World/Buildings/Building Scenes/house1.tscn" type="PackedScene" id=3]
 [ext_resource path="res://World/Buildings/Building Scenes/BIGhouse.tscn" type="PackedScene" id=4]
 [ext_resource path="res://World/Enviroment/Sidewalk/Sidewalk.tscn" type="PackedScene" id=5]
+[ext_resource path="res://World/Buildings/Other Buildings/Trohls.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/Enviroment/Trees/PineTree.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Game_Jam_1.1.wav" type="AudioStream" id=8]
 
 [sub_resource type="ConvexPolygonShape" id=1]
 
@@ -52,6 +54,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33.8798, 0, 0 )
 
 [node name="BIGhouse6" parent="Buildings" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -65.5397, 0, 0 )
+
+[node name="Trohls" parent="Buildings" instance=ExtResource( 6 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -74.6402, 0, -107.28 )
 
 [node name="Enviroment" type="Spatial" parent="."]
 
@@ -128,3 +133,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -158.445, 0, -29.0639 )
 
 [node name="PineTree20" parent="Trees" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -125.394, 0, 34.1904 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+autoplay = true
