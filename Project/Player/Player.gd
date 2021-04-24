@@ -4,8 +4,8 @@ extends KinematicBody
 onready var Camera = $Pivot/Camera
 
 var max_speed = 8
-var mouse_sensitivity = 0.002
-var mouse_range = 1.2
+var mouse_sensitivity = 0.005
+var mouse_range = 2
 var velocity = Vector3()
 var gravity = 9.8
 
@@ -26,7 +26,7 @@ func _physics_process(delta):
 	
 	velocity.x = desired_velocity.x
 	velocity.z = desired_velocity.z
-	velocity = move_and_slide(velocity, Vector3.UP, true)
+	velocity = move_and_slide(velocity, Vector3(0,1,0), true)
 
 
 func get_input():

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/Terrain/blockRoundedLarge.obj" type="ArrayMesh" id=2]
@@ -7,9 +7,6 @@
 [ext_resource path="res://World/Enviroment/Sidewalk/Sidewalk.tscn" type="PackedScene" id=5]
 [ext_resource path="res://World/Enviroment/Fence/Fence.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/Enviroment/Sidewalk/TownSquare.tscn" type="PackedScene" id=7]
-
-[sub_resource type="PhysicsMaterial" id=1]
-absorbent = true
 
 [sub_resource type="ConvexPolygonShape" id=2]
 
@@ -25,10 +22,9 @@ collision_mask = 45
 [node name="StaticBody" type="StaticBody" parent="Ground"]
 transform = Transform( 50, 0, 0, 0, 1, 0, 0, 0, 50, 0, 0, 0 )
 collision_mask = 62
-physics_material_override = SubResource( 1 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Ground/StaticBody"]
-transform = Transform( 5, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0 )
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, 0 )
 shape = SubResource( 2 )
 
 [node name="MeshInstance" type="MeshInstance" parent="Ground/StaticBody"]
