@@ -132,3 +132,5 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -158.445, 0, -29.0639 )
 
 [node name="PineTree20" parent="Trees" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -125.394, 0, 34.1904 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
