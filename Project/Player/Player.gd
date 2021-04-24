@@ -17,14 +17,12 @@ var inventory = []
 func _ready():
 	pass
 
-#func _process(_delta):
-#	get_input()
+func _process(_delta):
+	get_input()
 
 func _physics_process(delta):
-	
 	velocity.y -= gravity * delta
 	var desired_velocity = get_input() * max_speed
-
 	
 	velocity.x = desired_velocity.x
 	velocity.z = desired_velocity.z
@@ -57,7 +55,3 @@ func _unhandled_input(event):
 		$Pivot.rotate_x(-event.relative.y * mouse_sensitivity)
 		rotate_y(-event.relative.x * mouse_sensitivity)
 		$Pivot.rotation.x = clamp($Pivot.rotation.x, -mouse_range, mouse_range)
-	if Input.is_action_pressed("crouch"):
-		while velocity.y > -2:
-			--velocity.y
-		
