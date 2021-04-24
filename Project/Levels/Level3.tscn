@@ -48,14 +48,14 @@ transform = Transform( -3.0598e-08, 0, 1, 0, 1, 0, -0.7, 0, -4.37114e-08, 0, 0, 
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.303151, 0, 9.4616 )
 
 [node name="house1" parent="Buildings" instance=ExtResource( 6 )]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.166494, 0, 20.0136 )
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.166494, 0, 21.9261 )
 
 [node name="StaticBody" type="StaticBody" parent="Buildings"]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -12.9171, -1.5, 33.006 )
 collision_mask = 63
 
 [node name="house_type20" type="MeshInstance" parent="Buildings/StaticBody"]
-transform = Transform( 15, 0, 0, 0, 14, 0, 0, 0, 13, -20.4075, 2.28603, -5.19166 )
+transform = Transform( 15, 0, 0, 0, 14, 0, 0, 0, 13, -18.8407, 2.28603, -5.19166 )
 mesh = ExtResource( 3 )
 material/0 = null
 material/1 = null
