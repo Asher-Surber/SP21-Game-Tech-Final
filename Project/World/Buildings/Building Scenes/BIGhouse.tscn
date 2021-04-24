@@ -5,8 +5,6 @@
 [sub_resource type="BoxShape" id=1]
 
 [node name="BIGhouse" type="StaticBody"]
-collision_layer = 8
-collision_mask = 2
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 10.194, 1, 5.50792 )
