@@ -2,7 +2,7 @@
 
 [ext_resource path="res://World/Buildings/house_type20.obj" type="ArrayMesh" id=1]
 
-[sub_resource type="BoxShape" id=3]
+[sub_resource type="BoxShape" id=1]
 extents = Vector3( 8.96088, 5.55554, 5.25799 )
 
 [node name="StaticBody" type="StaticBody"]
@@ -19,4 +19,4 @@ material/3 = null
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.5992, 8.59447, -5.17426 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
