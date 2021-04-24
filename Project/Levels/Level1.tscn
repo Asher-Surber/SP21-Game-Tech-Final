@@ -5,6 +5,7 @@
 [ext_resource path="res://World/Buildings/Building Scenes/house1.tscn" type="PackedScene" id=3]
 [ext_resource path="res://World/Buildings/Building Scenes/BIGhouse.tscn" type="PackedScene" id=4]
 [ext_resource path="res://World/Enviroment/Sidewalk/Sidewalk.tscn" type="PackedScene" id=5]
+
 [ext_resource path="res://World/Buildings/Other Buildings/Trohls.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/Enviroment/Trees/PineTree.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Game_Jam_1.1.wav" type="AudioStream" id=8]
@@ -12,9 +13,11 @@
 [ext_resource path="res://Enemies/enemy_3.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Enemies/enemy_1.tscn" type="PackedScene" id=11]
 
+
 [sub_resource type="ConvexPolygonShape" id=1]
 
 [node name="Level1" type="Spatial"]
+script = ExtResource( 8 )
 
 [node name="Player Container" type="Spatial" parent="."]
 
@@ -22,6 +25,7 @@
 collision_mask = 45
 
 [node name="Ground" type="Spatial" parent="."]
+visible = false
 
 [node name="StaticBody" type="StaticBody" parent="Ground"]
 transform = Transform( 50, 0, 0, 0, 1, 0, 0, 0, 50, 0, 0, 0 )
@@ -38,6 +42,7 @@ material/0 = null
 material/1 = null
 
 [node name="Buildings" type="Spatial" parent="."]
+visible = false
 
 [node name="house1" parent="Buildings" instance=ExtResource( 3 )]
 
@@ -58,10 +63,10 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33.8798, 0, 0 )
 [node name="BIGhouse6" parent="Buildings" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -65.5397, 0, 0 )
 
-[node name="Trohls" parent="Buildings" instance=ExtResource( 6 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -74.6402, 0, -107.28 )
-
 [node name="Enviroment" type="Spatial" parent="."]
+
+[node name="Fence" parent="Enviroment" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.89855 )
 
 [node name="Sidewalk" parent="Enviroment" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.89137, 0, 0 )
@@ -74,6 +79,21 @@ transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 50.9622
 
 [node name="Sidewalk4" parent="Enviroment" instance=ExtResource( 5 )]
 transform = Transform( -1.75675e-05, 0, -1, 0, 1, 0, 1, 0, -1.75675e-05, -64.9274, 0, -61.3288 )
+
+[node name="TownSquare2" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -18.3247 )
+
+[node name="TownSquare3" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.4412 )
+
+[node name="TownSquare4" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0056, 0, -16.4371 )
+
+[node name="TownSquare5" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0113, 0, -18.543 )
+
+[node name="TownSquare6" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9216, 0, -20.5355 )
 
 [node name="Trees" type="Spatial" parent="."]
 
@@ -163,3 +183,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.8489, 2, -76.5373 )
 
 [node name="enemy_3" parent="Enemies" instance=ExtResource( 10 )]
 transform = Transform( 50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 45.9055, 100 )
+
+[node name="BlastContainer" type="Spatial" parent="."]
+
