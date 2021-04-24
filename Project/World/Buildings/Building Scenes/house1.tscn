@@ -6,7 +6,7 @@
 absorbent = true
 
 [sub_resource type="BoxShape" id=2]
-extents = Vector3( 0.640351, 0.389908, 0.446251 )
+extents = Vector3( 0.603681, 0.389908, 0.393913 )
 
 [node name="StaticBody" type="StaticBody"]
 collision_layer = 8
