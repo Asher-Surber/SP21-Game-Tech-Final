@@ -50,7 +50,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.1767, 0, 0 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -48.3943, 0, 0 )
 
 [node name="BIGhouse5" parent="Buildings" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33.8798, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 35.5076, 0, 0 )
 
 [node name="BIGhouse6" parent="Buildings" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -65.5397, 0, 0 )
