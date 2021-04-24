@@ -10,7 +10,7 @@ extents = Vector3( 0.640351, 0.389908, 0.446251 )
 
 [node name="StaticBody" type="StaticBody"]
 collision_layer = 8
-collision_mask = 55
+collision_mask = 2
 physics_material_override = SubResource( 1 )
 
 [node name="House1" type="MeshInstance" parent="."]
