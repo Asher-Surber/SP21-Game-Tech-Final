@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/blockHexagon.obj-5a220af9f23fc92147bbbe6a54f11b3a.mesh"
+
+[deps]
+
+files=[ "res://.import/blockHexagon.obj-5a220af9f23fc92147bbbe6a54f11b3a.mesh" ]
+
+source_file="res://World/kenney_platformerkit2/Models/OBJ format/blockHexagon.obj"
+dest_files=[ "res://.import/blockHexagon.obj-5a220af9f23fc92147bbbe6a54f11b3a.mesh", "res://.import/blockHexagon.obj-5a220af9f23fc92147bbbe6a54f11b3a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
