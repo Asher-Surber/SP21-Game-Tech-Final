@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tree.obj-5e426a47fb9a78491c8fede990ac4791.mesh"
+
+[deps]
+
+files=[ "res://.import/tree.obj-5e426a47fb9a78491c8fede990ac4791.mesh" ]
+
+source_file="res://World/kenney_platformerkit2/Models/OBJ format/tree.obj"
+dest_files=[ "res://.import/tree.obj-5e426a47fb9a78491c8fede990ac4791.mesh", "res://.import/tree.obj-5e426a47fb9a78491c8fede990ac4791.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

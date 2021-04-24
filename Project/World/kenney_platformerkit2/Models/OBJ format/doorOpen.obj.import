@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/doorOpen.obj-88f2a4f766ca7fd960689b6c91d156a5.mesh"
+
+[deps]
+
+files=[ "res://.import/doorOpen.obj-88f2a4f766ca7fd960689b6c91d156a5.mesh" ]
+
+source_file="res://World/kenney_platformerkit2/Models/OBJ format/doorOpen.obj"
+dest_files=[ "res://.import/doorOpen.obj-88f2a4f766ca7fd960689b6c91d156a5.mesh", "res://.import/doorOpen.obj-88f2a4f766ca7fd960689b6c91d156a5.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

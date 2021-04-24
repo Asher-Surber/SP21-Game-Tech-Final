@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/fence_small.obj-43b73c187a590af444fab62338b757ca.mesh"
+
+[deps]
+
+files=[ "res://.import/fence_small.obj-43b73c187a590af444fab62338b757ca.mesh" ]
+
+source_file="res://World/city-kit-urban-1/Models/OBJ format/fence_small.obj"
+dest_files=[ "res://.import/fence_small.obj-43b73c187a590af444fab62338b757ca.mesh", "res://.import/fence_small.obj-43b73c187a590af444fab62338b757ca.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

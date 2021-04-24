@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/flowersLow.obj-c4efdd1e6af6c507d23672c37e0463ab.mesh"
+
+[deps]
+
+files=[ "res://.import/flowersLow.obj-c4efdd1e6af6c507d23672c37e0463ab.mesh" ]
+
+source_file="res://World/Enviroment/flowersLow.obj"
+dest_files=[ "res://.import/flowersLow.obj-c4efdd1e6af6c507d23672c37e0463ab.mesh", "res://.import/flowersLow.obj-c4efdd1e6af6c507d23672c37e0463ab.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

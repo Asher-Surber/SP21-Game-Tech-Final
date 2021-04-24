@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/fence_rectangle.obj-5bdf4cb8d77fba64eac9a726db85cabe.mesh"
+
+[deps]
+
+files=[ "res://.import/fence_rectangle.obj-5bdf4cb8d77fba64eac9a726db85cabe.mesh" ]
+
+source_file="res://World/city-kit-urban-1/Models/OBJ format/fence_rectangle.obj"
+dest_files=[ "res://.import/fence_rectangle.obj-5bdf4cb8d77fba64eac9a726db85cabe.mesh", "res://.import/fence_rectangle.obj-5bdf4cb8d77fba64eac9a726db85cabe.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
