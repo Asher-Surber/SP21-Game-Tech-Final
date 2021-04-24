@@ -5,14 +5,12 @@
 [ext_resource path="res://World/Buildings/Building Scenes/house1.tscn" type="PackedScene" id=3]
 [ext_resource path="res://World/Buildings/Building Scenes/BIGhouse.tscn" type="PackedScene" id=4]
 [ext_resource path="res://World/Enviroment/Sidewalk/Sidewalk.tscn" type="PackedScene" id=5]
-
 [ext_resource path="res://World/Buildings/Other Buildings/Trohls.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/Enviroment/Trees/PineTree.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Game_Jam_1.1.wav" type="AudioStream" id=8]
 [ext_resource path="res://Enemies/enemy_2.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Enemies/enemy_3.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Enemies/enemy_1.tscn" type="PackedScene" id=11]
-
 
 [sub_resource type="ConvexPolygonShape" id=1]
 
@@ -25,7 +23,6 @@ script = ExtResource( 8 )
 collision_mask = 45
 
 [node name="Ground" type="Spatial" parent="."]
-visible = false
 
 [node name="StaticBody" type="StaticBody" parent="Ground"]
 transform = Transform( 50, 0, 0, 0, 1, 0, 0, 0, 50, 0, 0, 0 )
@@ -42,7 +39,6 @@ material/0 = null
 material/1 = null
 
 [node name="Buildings" type="Spatial" parent="."]
-visible = false
 
 [node name="house1" parent="Buildings" instance=ExtResource( 3 )]
 
@@ -185,4 +181,3 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.8489, 2, -76.5373 )
 transform = Transform( 50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 45.9055, 100 )
 
 [node name="BlastContainer" type="Spatial" parent="."]
-
