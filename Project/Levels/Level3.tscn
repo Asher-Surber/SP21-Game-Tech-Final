@@ -1,19 +1,23 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://World/Terrain/blockRoundedLarge.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://World/Buildings/house_type20.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://World/Enviroment/Sidewalk/Sidewalk.tscn" type="PackedScene" id=4]
+[ext_resource path="res://World/Buildings/Building Scenes/BIGhouse.tscn" type="PackedScene" id=5]
+[ext_resource path="res://World/Buildings/Building Scenes/house1.tscn" type="PackedScene" id=6]
 
 [sub_resource type="PhysicsMaterial" id=1]
 absorbent = true
 
 [sub_resource type="ConvexPolygonShape" id=2]
 
-[sub_resource type="PlaneMesh" id=3]
-
 [node name="Level3" type="Spatial"]
 
 [node name="Player Container" type="Spatial" parent="."]
 
 [node name="Player" parent="Player Container" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 30.1119 )
 collision_mask = 45
 
 [node name="Ground" type="Spatial" parent="."]
@@ -28,5 +32,27 @@ transform = Transform( 5, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0 )
 shape = SubResource( 2 )
 
 [node name="MeshInstance" type="MeshInstance" parent="Ground/StaticBody"]
-mesh = SubResource( 3 )
+mesh = ExtResource( 2 )
 material/0 = null
+material/1 = null
+
+[node name="Sidewalk" parent="." instance=ExtResource( 4 )]
+transform = Transform( -3.0598e-08, 0, 1, 0, 1, 0, -0.7, 0, -4.37114e-08, 0, 0, -2.31379 )
+
+[node name="Buildings" type="Spatial" parent="."]
+
+[node name="BIGhouse" parent="Buildings" instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 14.8864 )
+
+[node name="house1" parent="Buildings" instance=ExtResource( 6 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 20.0136 )
+
+[node name="StaticBody" type="StaticBody" parent="Buildings"]
+
+[node name="house_type20" type="MeshInstance" parent="Buildings/StaticBody"]
+transform = Transform( 15, 0, 0, 0, 14, 0, 0, 0, 13, -15.1633, 1, 1.14514 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
