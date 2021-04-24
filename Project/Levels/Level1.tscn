@@ -5,13 +5,14 @@
 [ext_resource path="res://World/Buildings/Building Scenes/house1.tscn" type="PackedScene" id=3]
 [ext_resource path="res://World/Buildings/Building Scenes/BIGhouse.tscn" type="PackedScene" id=4]
 [ext_resource path="res://World/Enviroment/Sidewalk/Sidewalk.tscn" type="PackedScene" id=5]
-[ext_resource path="res://World/Buildings/Other Buildings/Trohls.tscn" type="PackedScene" id=6]
-[ext_resource path="res://World/Enviroment/Trees/PineTree.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Game_Jam_1.1.wav" type="AudioStream" id=8]
+[ext_resource path="res://World/Enviroment/Fence/Fence.tscn" type="PackedScene" id=6]
+[ext_resource path="res://World/Enviroment/Sidewalk/TownSquare.tscn" type="PackedScene" id=7]
+[ext_resource path="res://global.gd" type="Script" id=8]
 
 [sub_resource type="ConvexPolygonShape" id=1]
 
 [node name="Level1" type="Spatial"]
+script = ExtResource( 8 )
 
 [node name="Player Container" type="Spatial" parent="."]
 
@@ -19,6 +20,7 @@
 collision_mask = 45
 
 [node name="Ground" type="Spatial" parent="."]
+visible = false
 
 [node name="StaticBody" type="StaticBody" parent="Ground"]
 transform = Transform( 50, 0, 0, 0, 1, 0, 0, 0, 50, 0, 0, 0 )
@@ -35,6 +37,7 @@ material/0 = null
 material/1 = null
 
 [node name="Buildings" type="Spatial" parent="."]
+visible = false
 
 [node name="house1" parent="Buildings" instance=ExtResource( 3 )]
 
@@ -55,10 +58,10 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33.8798, 0, 0 )
 [node name="BIGhouse6" parent="Buildings" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -65.5397, 0, 0 )
 
-[node name="Trohls" parent="Buildings" instance=ExtResource( 6 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -74.6402, 0, -107.28 )
-
 [node name="Enviroment" type="Spatial" parent="."]
+
+[node name="Fence" parent="Enviroment" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.89855 )
 
 [node name="Sidewalk" parent="Enviroment" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.89137, 0, 0 )
@@ -66,74 +69,22 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.89137, 0, 0 )
 [node name="Sidewalk2" parent="Enviroment" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.89137, 0, -50.0857 )
 
-[node name="Sidewalk3" parent="Enviroment" instance=ExtResource( 5 )]
-transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 50.9622, 0, -60.4192 )
+[node name="TownSquare" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16.2499 )
 
-[node name="Sidewalk4" parent="Enviroment" instance=ExtResource( 5 )]
-transform = Transform( -1.75675e-05, 0, -1, 0, 1, 0, 1, 0, -1.75675e-05, -64.9274, 0, -61.3288 )
+[node name="TownSquare2" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -18.3247 )
 
-[node name="Trees" type="Spatial" parent="."]
+[node name="TownSquare3" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.4412 )
 
-[node name="PineTree" parent="Trees" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25.8918, 0, -28.8003 )
+[node name="TownSquare4" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0056, 0, -16.4371 )
 
-[node name="PineTree2" parent="Trees" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0563, 0, 14.9934 )
+[node name="TownSquare5" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0113, 0, -18.543 )
 
-[node name="PineTree3" parent="Trees" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.2114, 0, -16.3462 )
+[node name="TownSquare6" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9216, 0, -20.5355 )
 
-[node name="PineTree4" parent="Trees" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.5573, 0, 30.0328 )
-
-[node name="PineTree5" parent="Trees" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.86745, 0, 70.5023 )
-
-[node name="PineTree6" parent="Trees" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.7506, 0, 0 )
-
-[node name="PineTree7" parent="Trees" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -48.35, 0, -13.8788 )
-
-[node name="PineTree8" parent="Trees" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -71.0024, 0, 0 )
-
-[node name="PineTree9" parent="Trees" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -53.9041, 0, 26.3205 )
-
-[node name="PineTree10" parent="Trees" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -50.5282 )
-
-[node name="PineTree11" parent="Trees" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -39.4728, 0, -67.5214 )
-
-[node name="PineTree12" parent="Trees" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 57.619, 0, -50.5282 )
-
-[node name="PineTree13" parent="Trees" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -84.5894, 0, -50.5282 )
-
-[node name="PineTree14" parent="Trees" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -59.0952, 0, -50.5282 )
-
-[node name="PineTree15" parent="Trees" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -103.124, 0, -23.9409 )
-
-[node name="PineTree16" parent="Trees" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -72.6347, 0, -21.7699 )
-
-[node name="PineTree17" parent="Trees" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -123.524, 0, -50.5282 )
-
-[node name="PineTree18" parent="Trees" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -143.309, 0, 5.27886 )
-
-[node name="PineTree19" parent="Trees" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -158.445, 0, -29.0639 )
-
-[node name="PineTree20" parent="Trees" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -125.394, 0, 34.1904 )
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 8 )
-autoplay = true
+[node name="BlastContainer" type="Spatial" parent="."]
