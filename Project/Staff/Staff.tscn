@@ -1,10 +1,27 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Staff/Staff.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Models/FPS_Models/staff_complete.glb" type="PackedScene" id=2]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.5
+height = 0.56114
+
+[sub_resource type="CapsuleShape" id=2]
+radius = 0.25
+height = 3.1
 
 [node name="Staff" type="Spatial"]
 
-[node name="RigidBody" type="RigidBody" parent="."]
+[node name="staff_complete" parent="." instance=ExtResource( 2 )]
+
+[node name="RigidBody" type="RigidBody" parent="staff_complete"]
 script = ExtResource( 1 )
 
-[node name="MeshInstance" type="MeshInstance" parent="."]
+[node name="CollisionShape" type="CollisionShape" parent="staff_complete/RigidBody"]
+transform = Transform( 1, 0, 0, 0, -0.0123742, -0.999923, 0, 0.999923, -0.0123742, 0, 1.91776, 0 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="staff_complete/RigidBody"]
+transform = Transform( 0.995275, -0.000879527, -0.0970926, -0.0970965, -0.00901548, -0.995234, 0, 0.999959, -0.00905828, -0.064007, -0.642306, 0 )
+shape = SubResource( 2 )
