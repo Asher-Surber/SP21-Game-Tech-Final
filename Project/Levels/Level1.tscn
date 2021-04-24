@@ -1,11 +1,10 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/Terrain/blockRoundedLarge.obj" type="ArrayMesh" id=2]
 [ext_resource path="res://World/Buildings/Building Scenes/house1.tscn" type="PackedScene" id=3]
 [ext_resource path="res://World/Buildings/Building Scenes/BIGhouse.tscn" type="PackedScene" id=4]
 [ext_resource path="res://World/Enviroment/Sidewalk/Sidewalk.tscn" type="PackedScene" id=5]
-[ext_resource path="res://World/Enviroment/Fence/Fence.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/Enviroment/Trees/PineTree.tscn" type="PackedScene" id=7]
 
 [sub_resource type="ConvexPolygonShape" id=1]
@@ -56,14 +55,17 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -65.5397, 0, 0 )
 
 [node name="Enviroment" type="Spatial" parent="."]
 
-[node name="Fence" parent="Enviroment" instance=ExtResource( 6 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55.4049, 0, -36.2136 )
-
 [node name="Sidewalk" parent="Enviroment" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.89137, 0, 0 )
 
 [node name="Sidewalk2" parent="Enviroment" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.89137, 0, -50.0857 )
+
+[node name="Sidewalk3" parent="Enviroment" instance=ExtResource( 5 )]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 50.9622, 0, -60.4192 )
+
+[node name="Sidewalk4" parent="Enviroment" instance=ExtResource( 5 )]
+transform = Transform( -1.75675e-05, 0, -1, 0, 1, 0, 1, 0, -1.75675e-05, -64.9274, 0, -61.3288 )
 
 [node name="Trees" type="Spatial" parent="."]
 
