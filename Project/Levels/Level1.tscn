@@ -16,67 +16,62 @@
 [node name="Player Container" type="Spatial" parent="."]
 
 [node name="Player" parent="Player Container" instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.68987, 2, 50.3548 )
 collision_mask = 45
 
 [node name="Ground" type="Spatial" parent="."]
 
 [node name="StaticBody" type="StaticBody" parent="Ground"]
-transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, 0 )
-collision_mask = 62
-
-[node name="MeshInstance" type="MeshInstance" parent="Ground/StaticBody"]
-transform = Transform( 7, 0, 0, 0, 1, 0, 0, 0, 7, 0, 0, 0 )
-mesh = ExtResource( 2 )
-material/0 = null
-material/1 = null
+transform = Transform( 50, 0, 0, 0, 1, 0, 0, 0, 50, 0, 0, 0 )
+collision_mask = 2
 
 [node name="CollisionShape" type="CollisionShape" parent="Ground/StaticBody"]
 transform = Transform( -46.4736, 0, 0, 0, 1.27376, 0, 0, 0, 12.7376, 0, 0, 0 )
 shape = SubResource( 1 )
 
+[node name="MeshInstance" type="MeshInstance" parent="Ground/StaticBody"]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, 0 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+
 [node name="Buildings" type="Spatial" parent="."]
 
 [node name="house1" parent="Buildings" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.68987, 0, 50.3548 )
 
 [node name="BIGhouse" parent="Buildings" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.68987, 0, 50.3548 )
 
 [node name="BIGhouse2" parent="Buildings" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -24.5138, 0, 50.3548 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -31.2037, 0, 0 )
 
 [node name="BIGhouse3" parent="Buildings" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23.8666, 0, 50.3548 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.1767, 0, 0 )
 
 [node name="BIGhouse4" parent="Buildings" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -41.7044, 0, 50.3548 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -48.3943, 0, 0 )
 
 [node name="BIGhouse5" parent="Buildings" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.5697, 0, 50.3548 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33.8798, 0, 0 )
 
 [node name="BIGhouse6" parent="Buildings" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -58.8498, 0, 50.3548 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -65.5397, 0, 0 )
 
 [node name="Enviroment" type="Spatial" parent="."]
 
 [node name="Fence" parent="Enviroment" instance=ExtResource( 6 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7453, 0, 37.666 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.89855 )
 
 [node name="Sidewalk" parent="Enviroment" instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2015, 0, 50.3548 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.89137, 0, 0 )
 
 [node name="Sidewalk2" parent="Enviroment" instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.89137, 0, -21.1273 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.89137, 0, -50.0857 )
 
 [node name="Town Square" parent="Enviroment" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 28.9584 )
 
 [node name="Town Square 2" parent="Enviroment" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9868, 0, 28.326 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9868, 0, -0.632423 )
 
 [node name="Town Square 3" parent="Enviroment" instance=ExtResource( 7 )]
-transform = Transform( 0.031498, 0, -0.999504, 0, 1, 0, 0.999504, 0, 0.031498, -50.4312, 0, -37.147 )
+transform = Transform( 0.031498, 0, -0.999504, 0, 1, 0, 0.999504, 0, 0.031498, -50.4312, 0, -66.1054 )
 
 [node name="Tree_Pine" parent="Enviroment" instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 28.9584 )
