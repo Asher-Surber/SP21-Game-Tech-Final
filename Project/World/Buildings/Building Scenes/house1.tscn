@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://World/Buildings/house_type01.obj" type="ArrayMesh" id=1]
+
+[sub_resource type="PhysicsMaterial" id=2]
+absorbent = true
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.640351, 0.389908, 0.446251 )
+
+[node name="StaticBody" type="StaticBody"]
+collision_layer = 8
+collision_mask = 55
+physics_material_override = SubResource( 2 )
+
+[node name="House1" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 1, 1, 1 )
+layers = 8
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 10, 0, 0, 0, -10, -1.50996e-06, 0, 1.50996e-06, -10, -5.50291, 4.89057, 5.67963 )
+shape = SubResource( 1 )

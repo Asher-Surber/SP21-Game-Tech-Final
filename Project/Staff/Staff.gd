@@ -8,7 +8,7 @@ extends Spatial
 	
 #load small blast scene
 
-export(int) var gem_count
+export(int) var crystal_count
 export(int) var mana
 
 # warning-ignore:unused_argument

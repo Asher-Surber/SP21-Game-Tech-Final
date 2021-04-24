@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/driveway_long.obj-eb7e82117b4814cdbf64d70f06b3cc06.mesh"
+
+[deps]
+
+files=[ "res://.import/driveway_long.obj-eb7e82117b4814cdbf64d70f06b3cc06.mesh" ]
+
+source_file="res://World/Enviroment/driveway_long.obj"
+dest_files=[ "res://.import/driveway_long.obj-eb7e82117b4814cdbf64d70f06b3cc06.mesh", "res://.import/driveway_long.obj-eb7e82117b4814cdbf64d70f06b3cc06.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/house_type16.obj-ce1c2b5d7f71d90a83c5902a2ccb291b.mesh"
+
+[deps]
+
+files=[ "res://.import/house_type16.obj-ce1c2b5d7f71d90a83c5902a2ccb291b.mesh" ]
+
+source_file="res://World/city-kit-urban-1/Models/OBJ format/house_type16.obj"
+dest_files=[ "res://.import/house_type16.obj-ce1c2b5d7f71d90a83c5902a2ccb291b.mesh", "res://.import/house_type16.obj-ce1c2b5d7f71d90a83c5902a2ccb291b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

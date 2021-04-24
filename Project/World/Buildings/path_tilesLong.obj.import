@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/path_tilesLong.obj-3a90a514cfebf3f72cac93fff0c2222a.mesh"
+
+[deps]
+
+files=[ "res://.import/path_tilesLong.obj-3a90a514cfebf3f72cac93fff0c2222a.mesh" ]
+
+source_file="res://World/Buildings/path_tilesLong.obj"
+dest_files=[ "res://.import/path_tilesLong.obj-3a90a514cfebf3f72cac93fff0c2222a.mesh", "res://.import/path_tilesLong.obj-3a90a514cfebf3f72cac93fff0c2222a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

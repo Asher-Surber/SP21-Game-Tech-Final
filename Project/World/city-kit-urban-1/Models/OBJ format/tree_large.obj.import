@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tree_large.obj-6c69ac90c65ce2d7a7456c8ef7be5b76.mesh"
+
+[deps]
+
+files=[ "res://.import/tree_large.obj-6c69ac90c65ce2d7a7456c8ef7be5b76.mesh" ]
+
+source_file="res://World/city-kit-urban-1/Models/OBJ format/tree_large.obj"
+dest_files=[ "res://.import/tree_large.obj-6c69ac90c65ce2d7a7456c8ef7be5b76.mesh", "res://.import/tree_large.obj-6c69ac90c65ce2d7a7456c8ef7be5b76.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
