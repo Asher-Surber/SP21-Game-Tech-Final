@@ -6,12 +6,10 @@
 [ext_resource path="res://World/Buildings/Building Scenes/BIGhouse.tscn" type="PackedScene" id=4]
 [ext_resource path="res://World/Enviroment/Sidewalk/Sidewalk.tscn" type="PackedScene" id=5]
 [ext_resource path="res://World/Enviroment/Fence/Fence.tscn" type="PackedScene" id=6]
-[ext_resource path="res://World/Enviroment/driveway_long.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://World/Enviroment/Sidewalk/TownSquare.tscn" type="PackedScene" id=7]
+[ext_resource path="res://World/Enviroment/Trees/Tree_Pine.tscn" type="PackedScene" id=8]
 
 [sub_resource type="ConvexPolygonShape" id=1]
-
-[sub_resource type="BoxShape" id=2]
-extents = Vector3( 2.87024, 1, 0.001 )
 
 [node name="Level1" type="Spatial"]
 
@@ -24,7 +22,7 @@ collision_mask = 45
 
 [node name="StaticBody" type="StaticBody" parent="Ground"]
 transform = Transform( 50, 0, 0, 0, 1, 0, 0, 0, 50, 0, 0, 0 )
-collision_mask = 62
+collision_mask = 2
 
 [node name="CollisionShape" type="CollisionShape" parent="Ground/StaticBody"]
 transform = Transform( -46.4736, 0, 0, 0, 1.27376, 0, 0, 0, 12.7376, 0, 0, 0 )
@@ -68,14 +66,12 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.89137, 0, 0 )
 [node name="Sidewalk2" parent="Enviroment" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.89137, 0, -50.0857 )
 
-[node name="StaticBody" type="StaticBody" parent="Enviroment"]
+[node name="Town Square" parent="Enviroment" instance=ExtResource( 7 )]
 
-[node name="MeshInstance" type="MeshInstance" parent="Enviroment/StaticBody"]
-transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 50, 0, 1, -59.3313 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
+[node name="Town Square 2" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9868, 0, -0.632423 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Enviroment/StaticBody"]
-transform = Transform( -0.862993, 0, 0, 0, 0.200745, 0, 0, 0, 9082.37, 0, 1.12546, -60.3847 )
-shape = SubResource( 2 )
+[node name="Town Square 3" parent="Enviroment" instance=ExtResource( 7 )]
+transform = Transform( 0.031498, 0, -0.999504, 0, 1, 0, 0.999504, 0, 0.031498, -50.4312, 0, -66.1054 )
+
+[node name="Tree_Pine" parent="Enviroment" instance=ExtResource( 8 )]
